@@ -36,7 +36,7 @@ class MovieDetail extends Component {
                         <h1>{movie.title}</h1>
                         <h3>{movie.release_date}</h3>
                         <p>{movie.overview}</p>
-                        <Link to="/">Go Back</Link>
+                        <Link to="/home">Go Back</Link>
 
                     </div>
                 </MovieInfo>

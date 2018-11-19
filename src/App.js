@@ -16,7 +16,7 @@ const App = () => (
       {/* <header className="App-header">
       </header> */}
       <Switch>
-        <Route exact path="/" component={MoviesList} />
+        <Route exact path="/home" component={MoviesList} />
         <Route path="/:id" component={MovieDetail} />
       </Switch>
     </div>
