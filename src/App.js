@@ -2,8 +2,7 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
-  Link
+  Switch
 } from 'react-router-dom'
 import './App.css';
 import MoviesList from './MoviesList';
@@ -16,7 +15,7 @@ const App = () => (
       {/* <header className="App-header">
       </header> */}
       <Switch>
-        <Route exact path="/home" component={MoviesList} />
+        <Route exact path={process.env.PUBLIC_URL + '/'} component={MoviesList} />
         <Route path="/:id" component={MovieDetail} />
       </Switch>
     </div>
