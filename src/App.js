@@ -16,7 +16,7 @@ const App = () => (
       </header> */}
       <Switch>
         <Route exact path={process.env.PUBLIC_URL + '/'} component={MoviesList} />
-        <Route path="/:id" component={MovieDetail} />
+        <Route path={process.env.PUBLIC_URL + '/:id'} component={MovieDetail} />
       </Switch>
     </div>
   </Router>
